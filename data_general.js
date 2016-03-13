@@ -1,0 +1,1 @@
+var gen = {"name":"Game of Numbers" , "NextQuestion":"Next" , "CancelSelected":"Cancel" , "SubmitChoice":"Submit" , "SkipQuestion":"Skip" , "ScoreText":"Your Score is : " , "greeting1":"CONGRATULATIONS... :-)" , "greeting2":"SORRY... :(" , "message1":"Answer is Correct...!!!" , "message2":"Answer is Wrong...!!!" + "<br>" + "Correct Answer is : "};

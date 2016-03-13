@@ -1,0 +1,1 @@
+var gen = {"name":"नाव" , "NextQuestion":"पुढील प्रश्न" , "CancelSelected":"रद्द" , "SubmitChoice":"तपासा" , "SkipQuestion":"वगळा" , "ScoreText":"गुण :" , "greeting1":"अभिनंदन... :-)" , "greeting2":"अरेरे ..." , "message1":"उत्तर योग्य आहे" , "message2":"उत्तर चुकीचे आहे" + "<br>" + "योग्य उत्तर: "};

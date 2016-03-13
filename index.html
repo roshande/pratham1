@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Title</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
+	<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+    
+	<script src="code.js"></script>
+	<script src="data_alphabets.js"></script>
+	<script src="data_words.js"></script>
+	<script src="data_general.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body onload="assign()">
+	
+	<div class="container">
+		<div class="jumbotron">
+			<h2 id="name"></h2>
+		</div>
+	</div>
+
+	<div class="container" id="answerbox">
+	  <div>
+	    <h2 id="greet"></h2><br>
+	    <h3 id="ans"></h3><br>
+	    <button class="btn-primary btn-lg" onClick="assign()" id="NextQuestion"></button>
+	  </div>
+	</div>
+	
+	<div class="row" style="padding:0px 20px 5px 20px">
+
+		<div class="col2">
+			<h2 id="equations"></h2><br><br><br>
+			<span><input type="text" name="textfield" defaultvalue="Enter some text" id="enteredText" disabled>
+			<button class="btn-danger btn-lg" onClick="reset()" id="CancelSelected"></button></span>
+        </div>
+
+		<div class="col1">
+			<center>
+			<div class="btn-group">
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name1"></span> <span class="badge" id="temp1"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name2"></span> <span class="badge" id="temp2"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name3"></span> <span class="badge" id="temp3"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name4"></span> <span class="badge" id="temp4"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name5"></span> <span class="badge" id="temp5"></span></button>
+			</div><br>
+			<div class="btn-group">
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name6"></span> <span class="badge" id="temp6"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name7"></span> <span class="badge" id="temp7"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name8"></span> <span class="badge" id="temp8"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name9"></span> <span class="badge" id="temp9"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name10"></span> <span class="badge" id="temp10"></span></button>
+			</div><br>
+			<div class="btn-group">
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name11"></span> <span class="badge" id="temp11"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name12"></span> <span class="badge" id="temp12"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name13"></span> <span class="badge" id="temp13"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name14"></span> <span class="badge" id="temp14"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name15"></span> <span class="badge" id="temp15"></span></button>
+			</div><br>
+			<div class="btn-group">
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name16"></span> <span class="badge" id="temp16"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name17"></span> <span class="badge" id="temp17"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name18"></span> <span class="badge" id="temp18"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name19"></span> <span class="badge" id="temp19"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name20"></span> <span class="badge" id="temp20"></span></button>
+			</div><br>
+			<div class="btn-group">
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name21"></span> <span class="badge" id="temp21"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name22"></span> <span class="badge" id="temp22"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name23"></span> <span class="badge" id="temp23"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name24"></span> <span class="badge" id="temp24"></span></button>
+				<button class="btn btn-primary btn-lg btn-autosize" onClick="puttext(this)"><span id="name25"></span> <span class="badge" id="temp25"></span></button>
+			</div>
+		</center>
+		</div>	
+	</div>
+	
+	<div class="container" >
+		<div class="col2">
+			<button type="button" class="btn btn-success btn-lg" onClick="check()" id="SubmitChoice"></button>
+			<button class="btn-warning btn-lg" onClick="assign()" id="SkipQuestion"></button>
+		</div>
+		<div class="col1">
+			<button class="btn-default btn-lg btn-block" disabled><span id="ScoreText"></span><span id="score_val"></span></button>
+		</div>
+	</div>
+	    
+</body>
+</html>
